@@ -676,3 +676,26 @@ padding:28px;
 }
 
 }
+/* Hero animation */
+.hero{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s ease;
+}
+
+/* Active navbar link */
+nav a.active{
+    color:#ffffff;
+    position:relative;
+}
+
+nav a.active::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:100%;
+    height:2px;
+    background:#2563EB;
+    border-radius:10px;
+}
